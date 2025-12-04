@@ -4,10 +4,8 @@ public class Arena : MonoBehaviour
 {
     void Start()
     {
-        //Ork ork = new Ork("Базовый Орк", 100, 20);
-
-        OrkPaladin orkPaladin = new OrkPaladin("Орк-паладин", 35, 3);
-        OrkMage orkMage = new OrkMage("Орк-маг", 20, 5);
+        OrkPaladin orkPaladin = new OrkPaladin(10, "Орк-паладин", 35, 3);
+        OrkMage orkMage = new OrkMage(2, "Орк-маг", 20, 5);
 
         ProcessBattle(orkMage, orkPaladin);
 
