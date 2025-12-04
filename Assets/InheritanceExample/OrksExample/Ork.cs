@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class Ork
 {
-    private string _name = "Îðê";
-    private int _health = 100;
-    private int _damage = 20;
+    private string _name;
+    private int _health;
+    private int _damage;
+
+    public Ork(string name, int health, int damage)
+    {
+        _name = name;
+        _health = health;
+        _damage = damage;
+    }
 
     public string Name => _name;
     public int Health => _health;
